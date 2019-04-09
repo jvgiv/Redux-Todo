@@ -20,7 +20,7 @@ const reducer = ( state = initialState, action ) => {
         case DELETE_TODO:
             return {
                 ...state,
-                todo: state.todo.filter(clickedItems => (clickedItems.id === action.payload))
+                todo: state.todo.filter(clickedItems => !( clickedItems.isClicked ))
             }
             default: 
                 return state;

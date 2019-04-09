@@ -33,7 +33,7 @@ class TodoList extends Component {
     }
 
     deleteItem = id => {
-        e.preventDefault();
+        // e.preventDefault();
         this.props.deleteTodo(id)
     }
 
@@ -91,7 +91,7 @@ class TodoList extends Component {
         <br/>
         <button style={button} onClick={this.updateList}>Update Todo List</button>
         <br/>
-        <button style={button} onClick={this.deleteTodo} >Delete Completed Task(s)</button>
+        <button style={button} onClick={this.deleteItem} >Delete Completed Task(s)</button>
       </div>
     )
   }
